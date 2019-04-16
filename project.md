@@ -4,13 +4,14 @@ title: Project Long Haul
 ---
 
 <div class="home" id="home">
-  <h1 class="pageTitle">Developer's Blog</h1>
+  <h1 class="pageTitle">Recent Project</h1>
+<!--
     <ul class="posts noList">
         <li>
             <h4>Hello, I am Ju Hyeon who is trying to be a great developer. This blog posts a project or course of study that I've been preparing for. Please give us a lot of feedback and attention.</h4>
         </li>
     </ul>
-<!--
+-->
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
@@ -20,7 +21,6 @@ title: Project Long Haul
       </li>
     {% endfor %}
   </ul>
--->
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
