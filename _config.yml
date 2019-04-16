@@ -18,6 +18,8 @@ navigation:
     url: /about
   - title: Contact
     url: /contact
+  - title: Project
+    url: /project
 
 social:
   github: brianmaierjr

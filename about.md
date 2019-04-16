@@ -13,6 +13,7 @@ title: About JuHyeon
         저는 동서대학교 컴퓨터공학부를 졸업했습니다. 거주지는 부산이고, 현재 나이는 24세 입니다.
         혈액형은 A형, 취미는 독서입니다. 제 성격유형은 INFP-T인 열정적인 중재자입니다.
     </p>
+<!--
 	<h2>Features</h2>
 	<ul>
 		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
@@ -26,7 +27,8 @@ title: About JuHyeon
   		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
   		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
   	</ul>
-    <h2>연구회 활동</h2>
+-->
+    <h3>연구회 활동</h3>
     <ul>
         <li>동서대학교 DN 연구회</li>
         <li>DSU 창업 동아리</li>
