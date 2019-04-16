@@ -4,7 +4,7 @@ title: Project Long Haul
 ---
 
 <div class="home" id="home">
-  <h1 class="pageTitle">Recent Project</h1>
+  <h1 class="pageTitle">Recent Projects</h1>
 <!--
     <ul class="posts noList">
         <li>
