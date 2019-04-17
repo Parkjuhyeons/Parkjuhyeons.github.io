@@ -59,6 +59,8 @@ description: If you use the Web via SNS, you can save it using the program. At t
 </dl>
 
 
-## 프로젝트 설계
+## 프로젝트 설계Z
 
 <img src="{{ '/assets/img/conceptual.png' | prepend: site.baseurl }}" alt=""> 
+<img src="/assets/img/conceptual.png" style="display:block; margin: auto; margin-bottom:30px;" alt="">
+<img src="/assets/img/conceptual.PNG" style="display:block; margin: auto; margin-bottom:30px;" alt="">
