@@ -64,15 +64,18 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 <figure>
     <img src="/assets/img/conceptual.PNG" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 <figure>
     <img src="/assets/img/configuration.png" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 2. System Configuration Diagram</figcaption>
 </figure>
+* OCR 엔진을 통한 문자 추출과 위치기반을 통한 클라우드 시스템
+* PWA (Progressive Web App)을 이용 하여 사용자 경험 향상을 목적으로 하고, URL 입력없이 웹 사이트에 접속
+* 또한 Javascript로 구현한 후 모바일 언어로 푸시 알람 구현
 <figure>
     <img src="/assets/img/erdiagram.png" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 3. E-R Diagram</figcaption>
 </figure>
 
 
@@ -81,19 +84,17 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 <figure>
     <img src="/assets/img/web1.png" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 4. Web 메인 화면</figcaption>
 </figure>
 <figure>
     <img src="/assets/img/web2.png" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 5. Web 등록 화면</figcaption>
 </figure>
-* OCR 엔진을 통한 문자 추출과 위치기반을 통한 클라우드 시스템
-* PWA (Progressive Web App)을 이용 하여 사용자 경험 향상을 목적으로 하고, URL 입력없이 웹 사이트에 접속
-* 또한 Javascript로 구현한 후 모바일 언어로 푸시 알람 구현
+
 
 <figure>
     <img src="/assets/img/web3.png" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 6. 문자 추출 화면 </figcaption>
 </figure>
 
 
@@ -102,15 +103,21 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 <figure>
     <img src="/assets/img/app.png" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 7. PWA를 통한 APP화면</figcaption>
 </figure>
 
 
 ## 비고
 
-* 논문 1건
+* 논문 1건 <a href="/assets/img/ksci.pdf">KSCI 논문</a>
 
 <figure>
     <img src="/assets/img/non.png" alt="">
-     <figcaption>System Conceptual Diagram</figcaption>
+     <figcaption>Fig. 8. KSCI 학회 눈문</figcaption>
 </figure>
+
+* 참고 API 및 패턴
+
+<a href="/blog/featured-image/">
+<span>«&nbsp;Featured Image</span>
+</a>
