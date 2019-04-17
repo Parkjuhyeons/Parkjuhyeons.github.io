@@ -13,26 +13,46 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
+<!--
 ## Unordered List
 * List Item
 * Longer List Item
   * Nested List Item
   * Nested Item
 * List Item
+-->
 
+<!--
 ## Ordered List
 1. List Item
 2. Longer List Item
     1. Nested OL Item
     2. Another Nested Item
 3. List Item
+-->
 
-## Definition List
+## 작품 개요 및 개발구성
 <dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
+  <dt>이름</dt>
+  <dd>사용자 기반의 명소 저장 클라우드 시스템</dd>
+  <dt>플랫폼</dt>
+  <dd>Web</dd>
+  <dt>제작 언어</dt>
+  <dd>Javascript, HTML, CSS</dd>
+  <dt>서버</dt>
+  <dd>Node.JS</dd>
+  <dt>프레임워크</dt>
+  <dd>Express</dd>
+  <dt>API</dt>
+  <dd>Google map API</dd>
+  <dt>Library</dt>
+  <dd>Google Vision API (OCR)</dd>
+  <dt>운영체제</dt>
+  <dd>Window</dd>
+  <dt>DBMS</dt>
+  <dd>MYSQL</dd>
+  <dt>제작 기간</dt>
+  <dd>2018-04-02 ~ 2018-06-02</dd>
 </dl>
 
 Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
