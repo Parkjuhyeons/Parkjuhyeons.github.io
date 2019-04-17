@@ -118,6 +118,5 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 * 참고 API 및 패턴
 
-<a href="/blog/featured-image/">
-<span>«&nbsp;Featured Image</span>
-</a>
+** <a href="/blog/featured-image/"><span>«&nbsp;Featured Image</span></a>
+** <a href="/blog/code-snippet/"><span>«&nbsp;Featured Image</span></a>
