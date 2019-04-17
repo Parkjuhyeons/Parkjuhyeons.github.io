@@ -3,15 +3,16 @@ layout: default
 title: Project Long Haul
 ---
 
-<div class="home" id="home">
-  <h1 class="pageTitle">Recent Project</h1>
-<!--
-    <ul class="posts noList">
-        <li>
-            <h4>Hello, I am Ju Hyeon who is trying to be a great developer. This blog posts a project or course of study that I've been preparing for. Please give us a lot of feedback and attention.</h4>
-        </li>
-    </ul>
--->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
+
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -37,4 +38,3 @@ title: Project Long Haul
   {% endif %}
 </div>
 {% endif %}
-</div>
