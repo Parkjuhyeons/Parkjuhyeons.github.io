@@ -32,9 +32,9 @@ description: If you use the Web via SNS, you can save it using the program. At t
     2. Another Nested Item
 3. List Item
 -->
-<blockquote>
+
 ## 작품 개요 및 개발구성
-</blockquote>
+
 <dl>
   <dt>이름</dt>
   <dd>사용자 기반의 명소 저장 클라우드 시스템</dd>
@@ -58,7 +58,7 @@ description: If you use the Web via SNS, you can save it using the program. At t
   <dd>2018-04-02 ~ 2018-06-02</dd>
 </dl>
 
-<blockquote>
+
 ## 프로젝트 설계
-</blockquote>
+
 <img src="{{ '/assets/img/conceptual.png' | prepend: site.baseurl }}" alt=""> 
