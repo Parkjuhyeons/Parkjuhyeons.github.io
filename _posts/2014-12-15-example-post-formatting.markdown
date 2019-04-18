@@ -56,6 +56,8 @@ description: If you use the Web via SNS, you can save it using the program. At t
   <dd>MYSQL</dd>
   <dt>제작 기간</dt>
   <dd>2018-04-02 ~ 2018-06-02</dd>
+  <dt>담당 업무</dt>
+  <dd>프로젝트 설계 및 개발, 유지보수</dd>
 </dl>
 
 
@@ -63,7 +65,7 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 
 <figure>
-    <img src="/assets/img/conceptual.PNG" alt="">
+    <img src="/assets/img/conceptual1.PNG" alt="">
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 <figure>
