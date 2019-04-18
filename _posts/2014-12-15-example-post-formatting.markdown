@@ -91,7 +91,7 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 
 <figure>
-    <img src="/assets/img/erdiagram.png" alt="">
+    <img src="/assets/img/erdiagram.png" alt="" style="width:600px;">
      <figcaption>Fig. 3. E-R Diagram</figcaption>
 </figure>
 
@@ -100,17 +100,17 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 
 <figure>
-    <img src="/assets/img/web1.png" alt="">
+    <img src="/assets/img/web1.png" alt="" style="width:750px;">
      <figcaption>Fig. 4. Web 메인 화면</figcaption>
 </figure>
 <figure>
-    <img src="/assets/img/web2.png" alt="">
+    <img src="/assets/img/web2.png" alt="" style="width:750px;">
      <figcaption>Fig. 5. Web 등록 화면</figcaption>
 </figure>
 
 
 <figure>
-    <img src="/assets/img/web3.png" alt="">
+    <img src="/assets/img/web3.png" alt="" style="width:750px;">
      <figcaption>Fig. 6. 문자 추출 화면 </figcaption>
 </figure>
 
@@ -119,7 +119,7 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 
 <figure>
-    <img src="/assets/img/app.png" alt="">
+    <img src="/assets/img/app.png" alt="" style="width:600px;">
      <figcaption>Fig. 7. PWA를 통한 APP화면</figcaption>
 </figure>
 
@@ -128,10 +128,6 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 * 논문 1건 <a href="/assets/img/ksci.pdf">KSCI 논문</a>
 
-<figure>
-    <img src="/assets/img/non.png" alt="">
-     <figcaption>Fig. 8. KSCI 학회 눈문</figcaption>
-</figure>
 
 * 참고 API 및 패턴
 
