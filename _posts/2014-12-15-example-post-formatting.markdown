@@ -83,16 +83,20 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 여행지는 분류되어 저장되며, 근접 여행지 알림을 push 받을 수 있다.
 <figure>
     <img src="/assets/img/configuration.png" alt="">
-     <figcaption>Fig. 2. System Configuration Diagram</figcaption>
+     <figcaption>Fig. 3. System Configuration Diagram</figcaption>
 </figure>
 * OCR 엔진을 통한 문자 추출과 위치기반을 통한 클라우드 시스템
 * PWA (Progressive Web App)을 이용 하여 사용자 경험 향상을 목적으로 하고, URL 입력없이 웹 사이트에 접속
 * 또한 Javascript로 구현한 후 모바일 언어로 푸시 알람 구현
 
+<figure>
+    <img src="/assets/img/modul.PNG" alt="" style="width:600px;">
+     <figcaption>Fig. 4. System Module Configuration</figcaption>
+</figure>
 
 <figure>
     <img src="/assets/img/erdiagram.png" alt="" style="width:600px;">
-     <figcaption>Fig. 3. E-R Diagram</figcaption>
+     <figcaption>Fig. 5. E-R Diagram</figcaption>
 </figure>
 
 
@@ -101,17 +105,17 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 <figure>
     <img src="/assets/img/web1.png" alt="" style="width:750px;">
-     <figcaption>Fig. 4. Web 메인 화면</figcaption>
+     <figcaption>Fig. 6. Web 메인 화면</figcaption>
 </figure>
 <figure>
     <img src="/assets/img/web2.png" alt="" style="width:750px;">
-     <figcaption>Fig. 5. Web 등록 화면</figcaption>
+     <figcaption>Fig. 7. Web 등록 화면</figcaption>
 </figure>
 
 
 <figure>
     <img src="/assets/img/web3.png" alt="" style="width:750px;">
-     <figcaption>Fig. 6. 문자 추출 화면 </figcaption>
+     <figcaption>Fig. 8. 문자 추출 화면 </figcaption>
 </figure>
 
 
@@ -120,16 +124,16 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 <figure>
     <img src="/assets/img/app.png" alt="" style="width:600px;">
-     <figcaption>Fig. 7. PWA를 통한 APP화면</figcaption>
+     <figcaption>Fig. 9. PWA를 통한 APP화면</figcaption>
 </figure>
 
 
 ## 비고
 
-* 논문 1건 <a href="/assets/img/ksci.pdf">KSCI 논문</a>
+* 논문 1건 <a href="/assets/img/ksci.pdf">KSCI Conference 2018</a>
 
 
-* 참고 API 및 패턴
+## 참고 API 및 패턴
 
-** <a href="/blog/featured-image/"><span>«&nbsp;Featured Image</span></a>
-** <a href="/blog/code-snippet/"><span>«&nbsp;Featured Image</span></a>
+* <a href="/blog/featured-image/"><span>«&nbsp;Promise 패턴</span></a>
+* <a href="/blog/code-snippet/"><span>«&nbsp;Google Vision API</span></a>
