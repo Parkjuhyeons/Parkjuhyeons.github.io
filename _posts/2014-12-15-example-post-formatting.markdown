@@ -65,7 +65,7 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 
 <figure>
-    <img src="/assets/img/conceptual1.PNG" alt="">
+    <img src="/assets/img/conceptual1.PNG" alt="" style="width:630px;">
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 <figure>
