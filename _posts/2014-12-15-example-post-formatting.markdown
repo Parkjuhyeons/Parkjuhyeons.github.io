@@ -74,8 +74,8 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 간단한 시나리오로 나타내면 다음 (@@)과 같다.
 <figure>
-    <img src="/assets/img/conceptual.PNG" alt="" style="width:500px;" >
-     <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
+    <img src="/assets/img/conceptual.PNG" alt="" style="width:400px;" >
+     <figcaption>Fig. 2. System Scenario</figcaption>
 </figure>
 OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 추출한다.
 추출된 데이터를 이용해 자동 위치 주소 검색한다.
@@ -88,6 +88,8 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 * OCR 엔진을 통한 문자 추출과 위치기반을 통한 클라우드 시스템
 * PWA (Progressive Web App)을 이용 하여 사용자 경험 향상을 목적으로 하고, URL 입력없이 웹 사이트에 접속
 * 또한 Javascript로 구현한 후 모바일 언어로 푸시 알람 구현
+
+
 <figure>
     <img src="/assets/img/erdiagram.png" alt="">
      <figcaption>Fig. 3. E-R Diagram</figcaption>
