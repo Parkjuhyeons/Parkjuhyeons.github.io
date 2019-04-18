@@ -63,16 +63,24 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 ## 프로젝트 설계
 
-사용자는 PC 또는 스마트폰의 앨범이나 메모장에 기록된 명소 사진들을 본 시스템에 등록한다. 명소 저장 및 문자 추출 시스템에 의하여 해당 사진 내의 문자들을 추출한다. 추출된 문자 중 적절한 문자 내용을 선택하거나 수동으로 입력한다. 선택된 문자는 해당 명소의 제목이 되며, 동시에 위치 기반을 통해 주소와 함께 저장되어진다. 이렇게 저장되어진 명소들은 한 사용자에 의해서 수정, 삭제될 수 있으며 다른 사용자에게 공유되어진다. 또한 해당 게시물을 스크랩하거나 검색할 수도 있다. 이 명소들은 이후에 사용자의 위치와 근접해질 경우 스마트폰 알림으로 전송되어지며, 1년전 게시물이나 2년전 게시물처럼 잊혀진 게시물로 제공된다. 플랫폼의 제약없이 어떠한 디바이스로도 사용이 가능하다.
+사용자는 PC 또는 스마트폰의 앨범이나 메모장에 기록된 명소 사진들을 본 시스템에 등록한다. 명소 저장 및 문자 추출 시스템에 의하여 해당 사진 내의 문자들이 추출된다. 추출된 문자 중 적절한 문자 내용을 선택하거나 수동으로 입력한다. 선택된 문자는 해당 명소의 제목이 되며, 동시에 위치 기반을 통해 주소와 함께 저장되어진다. 
 
 <figure>
     <img src="/assets/img/conceptual1.PNG" alt="" style="width:630px;">
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
+
+이렇게 저장되어진 명소들은 한 사용자에 의해서 수정, 삭제될 수 있으며 다른 사용자에게 공유되어진다. 또한 해당 게시물을 스크랩하거나 검색할 수도 있다. 이 명소들은 이후에 사용자의 위치와 근접해질 경우 스마트폰 알림으로 전송되어지며, 1년전 게시물이나 2년전 게시물처럼 잊혀진 게시물로 제공된다. 플랫폼의 제약없이 어떠한 디바이스로도 사용이 가능하다.
+
+간단한 시나리오로 나타내면 다음 (@@)과 같다.
 <figure>
-    <img src="/assets/img/conceptual.PNG" alt="" >
+    <img src="/assets/img/conceptual.PNG" alt="" style="width:500px;" >
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
+OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 추출한다.
+추출된 데이터를 이용해 자동 위치 주소 검색한다.
+데이터가 사진, 글, 주소와 같은 형태로 저장한다.
+여행지는 분류되어 저장되며, 근접 여행지 알림을 push 받을 수 있다.
 <figure>
     <img src="/assets/img/configuration.png" alt="">
      <figcaption>Fig. 2. System Configuration Diagram</figcaption>
