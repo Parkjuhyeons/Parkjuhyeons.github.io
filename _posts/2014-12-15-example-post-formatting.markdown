@@ -72,7 +72,7 @@ description: If you use the Web via SNS, you can save it using the program. At t
 
 이렇게 저장되어진 명소들은 한 사용자에 의해서 수정, 삭제될 수 있으며 다른 사용자에게 공유되어진다. 또한 해당 게시물을 스크랩하거나 검색할 수도 있다. 이 명소들은 이후에 사용자의 위치와 근접해질 경우 스마트폰 알림으로 전송되어지며, 1년전 게시물이나 2년전 게시물처럼 잊혀진 게시물로 제공된다. 플랫폼의 제약없이 어떠한 디바이스로도 사용이 가능하다.
 
-간단한 시나리오로 나타내면 다음 (@@)과 같다.
+간단한 시나리오로 나타내면 다음 그림2와 같다.
 <figure>
     <img src="/assets/img/conceptual.PNG" alt="" style="width:400px;" >
      <figcaption>Fig. 2. System Scenario</figcaption>
@@ -94,6 +94,22 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
      <figcaption>Fig. 4. System Module Configuration</figcaption>
 </figure>
 
+<dt>구성도에 따른 주요 기능</dt>
+* 간편화 저장 
+ -사용자가 필요할 시 편하고 쉽게 저장
+ - 스크린 샷을 통해 장소에 대한 위치 자동 검색
+ - 사용자 스스로도 위치 등록이 가능, 제목과 태그와 같은 게시 글 형태로 저장
+* 저장된 데이터 활용
+ - 저장되어진 명소에 대한 상세정보 제공
+* 이용된 데이터 활용
+ - 이미 다녀온 명소에 대한 데이터 처리 필요
+ - 좋았던 곳과 나빴던 곳, 또는 삭제 처리를 이용
+ - 사용자는 점수를 달거나 리뷰를 달아 다녀온 곳을 기억할 수 있음
+* 위치 알림 이벤트
+ - 사용자가 저장한 명소가 실제 사용자 근처에 존재 할 때 PUSH 알림 제공
+ - 알림을 줄 명소와 제어 할 데이터 선택 가능
+* 공유 기능
+ - 저장된 명소를 다른 계정의 누군가와 공유 가능
 <figure>
     <img src="/assets/img/erdiagram.png" alt="" style="width:600px;">
      <figcaption>Fig. 5. E-R Diagram</figcaption>
