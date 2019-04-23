@@ -160,7 +160,10 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 ## 참고 API 및 관련기술
 
-* Google Vision API (<a href="https://cloud.google.com/functions/docs/tutorials/ocr">KSCI Conference 2018</a>)
+* <a href="https://cloud.google.com/functions/docs/tutorials/ocr">Google Vision API</a> - 참고 튜토리얼
+
+
+* Promise 패턴 적용
 <img src="/assets/img/promise.png" alt="" style="width:600px;">
 
 <p><span class="dropcap">P</span>romise 패턴을 이용하여 비동기 방식의 콜백 문제 개선. </p>
@@ -169,8 +172,6 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 <img src="/assets/img/promise1.png" alt="" >
 
 위 API가 실행되면 서버에다가 ‘데이터 하나 보내주세요’ 라는 요청을 보내죠. 그런데 여기서 데이터를 받아오기도 전에 마치 데이터를 다 받아온 것 마냥 화면에 데이터를 표시하려고 하면 오류가 발생하거나 빈 화면이 뜹니다. 이와 같은 문제점을 해결하기 위한 방법 중 하나가 프로미스입니다.
-
-* 적용 프로젝트 (<a href="/blog/example-post-formatting/"><span>«&nbsp;사용자 기반의 명소 저장 클라우드 시스템</span></a>)
 
 <dl>
 <dt>Promise 패턴 적용</dt>

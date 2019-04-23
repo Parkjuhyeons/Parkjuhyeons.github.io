@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Google Vision API"
+title:  "(기업체 연계)스포츠 퓌트니스센터 웹 서비스"
 date:   2014-12-13
 ---
 
