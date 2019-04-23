@@ -47,3 +47,23 @@ In this project, we propose a system that shows optimal route, destination route
     <img src="/assets/img/g_con.png" alt="" style="width:580px;">
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
+
+## 데이터베이스 설계
+
+## 사용자 Web 화면
+
+<figure>
+    <img src="/assets/img/g_web.gif" alt="" style="width:580px;">
+     <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
+</figure>
+
+## 사용자 App 화면
+
+<figure>
+    <img src="/assets/img/g_app.png" alt="" style="width:580px;">
+     <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
+</figure>
+<figure>
+    <img src="/assets/img/g_app2.png" alt="" style="width:580px;">
+     <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
+</figure>
