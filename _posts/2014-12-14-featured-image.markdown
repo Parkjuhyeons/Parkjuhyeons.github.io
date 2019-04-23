@@ -32,4 +32,29 @@ image: promise.png
 
 <img src="/assets/img/si2.png" alt="" style="width:660px;">
 
-이러한 문제를 해결하기 callback함수를 사용하거나 setTiomeout함수를 이용해 시간을 끄는 것은 사용자에게 불편함을 미치거나 시스템 효율상 올바르지 않다. 그리하여 본 시스템에 Promise패턴을 이용하여 성능을 높인다.
+이러한 문제를 해결하기 callback함수를 사용하거나 setTimeout함수를 이용해 시간을 끄는 것은 사용자에게 불편함을 미치거나 시스템 효율상 올바르지 않다. 그리하여 본 시스템에 Promise패턴을 이용하여 성능을 높인다.
+
+{% highlight ruby %}
+
+exports.processImage = (event) => {
+  let file = event.data;
+
+  return Promise.resolve()
+    .then(() => {
+      if (file.resourceState === 'not_exists') {
+        // This was a deletion event, we don't want to process this
+        return;
+      }
+      if (!file.bucket) {
+        throw new Error('Bucket not provided. Make sure you have a "bucket" property in your request');
+      }
+      if (!file.name) {
+        throw new Error('Filename not provided. Make sure you have a "name" property in your request');
+      }
+      return detectText(file.bucket, file.name);
+    })
+    .then(() => {
+      console.log('File ${file.name} processed.');
+    });
+};
+{% endhighlight %}
