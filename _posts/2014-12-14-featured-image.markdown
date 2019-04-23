@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Featured Image"
+title:  "Promise 패턴의 적용"
 date:   2014-12-14
 image: promise.png
 ---
@@ -22,6 +22,6 @@ image: promise.png
 <dd>사용자 기반의 명소 저장 클라우드 시스템은 Google Vision API를 통해 사용자가 저장하고자 하는 이미지의 텍스트를 추출하는 기능을 주로 하고있다.</dd>
 </dl>
 
-<img src="/assets/img/si.png" alt="" style="width:600px;">
+<img src="/assets/img/si.PNG" alt="" style="width:600px;">
 
 위 그림에서는 메인 화면에서 다수의 사진을 등록한다. 등록되어진 사진들은 등록페이지로 넘어가는 동시에 사진 내 이미지 추출(OCR) 기능이 수행된다.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Post With A Code Snippet"
+title:  "Google Vision API"
 date:   2014-12-13
 ---
 

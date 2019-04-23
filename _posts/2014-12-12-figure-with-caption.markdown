@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Figure With A Caption"
+title:  "Progressive Web App"
 date:   2014-12-12
 ---
 

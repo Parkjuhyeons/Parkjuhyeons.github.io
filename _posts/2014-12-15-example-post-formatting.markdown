@@ -154,11 +154,12 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 ## 비고
 
 * 논문 2건 
-<a href="/assets/img/ksci.pdf">KSCI Conference 2018</a>
+<a href="/assets/img/ksci.pdf">KSCI Conference 2018</a>, 
 <a href="/assets/img/icct.pdf">ICCT Conference 2018</a>
 
 
-## 참고 API 및 패턴
+## 참고 API 및 관련기술
 
 * <a href="/blog/featured-image/"><span>«&nbsp;Promise 패턴</span></a>
 * <a href="/blog/code-snippet/"><span>«&nbsp;Google Vision API</span></a>
+* <a href="/blog/figure-with-caption/"><span>«&nbsp;Progressive Web App</span></a>
