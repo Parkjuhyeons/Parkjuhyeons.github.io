@@ -47,6 +47,20 @@ description: In this project, we propose a system that shows optimal route, dest
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 
+<dl>
+<dt>구성도에 따른 주요 기능</dt>
+</dl>
+
+* 최적 경로 탐색
+1.탐색 영역 둘러보기 (The Search Area)
+2.탐색 시작 (Starting the Search)
+3.경로 채점 (Path Scoring)
+<p>F = G + H
+G - 시작점 A로부터 현재 사각형까지의 경로를 따라 이동하는데 소요되는 비용
+H - 현재 사각형에서 목적지 B까지의 예상 이동 비용. 사이에 벽, 물 등으로 인해 실제 거리는 알지 못함. 그들을 무시하고 예상 거리를 산출. 여러 방법이 있지만, 이 포스팅에서는 대각선 이동을 생각하지 않고, 가로 또는 세로로 이동하는 비용만 계산.
+F - 현재까지 이동하는데 걸린 비용과 예상 비용을 합친 총 비용입니다.</p>
+4.계속 탐색하기 (Continuing the Search)
+
 ## 데이터베이스 설계
 
 ## 사용자 Web 화면
@@ -66,3 +80,11 @@ description: In this project, we propose a system that shows optimal route, dest
     <img src="/assets/img/g_app2.png" alt="" style="width:580px;">
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
+
+## 비고
+
+* 논문 2건 
+
+## 관련 기술
+
+*
