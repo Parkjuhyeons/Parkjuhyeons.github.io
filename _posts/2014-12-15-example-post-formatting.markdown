@@ -153,7 +153,9 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 ## 비고
 
-* 논문 1건 <a href="/assets/img/ksci.pdf">KSCI Conference 2018</a>
+* 논문 2건 
+<a href="/assets/img/ksci.pdf">KSCI Conference 2018</a>
+<a href="/assets/img/icct.pdf">ICCT Conference 2018</a>
 
 
 ## 참고 API 및 패턴

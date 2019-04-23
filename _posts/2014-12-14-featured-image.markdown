@@ -12,13 +12,16 @@ image: promise.png
 
 위 API가 실행되면 서버에다가 ‘데이터 하나 보내주세요’ 라는 요청을 보내죠. 그런데 여기서 데이터를 받아오기도 전에 마치 데이터를 다 받아온 것 마냥 화면에 데이터를 표시하려고 하면 오류가 발생하거나 빈 화면이 뜹니다. 이와 같은 문제점을 해결하기 위한 방법 중 하나가 프로미스입니다.
 
-@@@
-(내 예제를 이용하여 promise 패턴 적용 방법, 결과 적기 -- !)
+* 적용 프로젝트 (<a href="/blog/example-post-formatting/"><span>«&nbsp;사용자 기반의 명소 저장 클라우드 시스템</span></a>)
 
-Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.
+<dl>
+<dt>작품 개요</dt>
+<dd>SNS를 이용 중이거나 웹 서핑 중에 마음에 드는 명소를 저장하고자 할 때, 사용자들은 스크린 샷을 찍거나 메모장에 기록하는 등 단순한 저장방법을 이용합니다. 이 때, 저장하고자 하는 명소의 정보가 일정한 시간이 지나 관리할 수 없을 정도가 되면 저장의 가치가 사라집니다. 가고자 하는 목적의 근처를 방문했을 때, 또는 생각이나 가고자 할 때에 저장해둔 데이터를 쉽게 찾기에는 어려움이 존재합니다. 이를 해결하기 위해서 본 프로젝트를 통하여 사용자 기반의 명소저장 클라우드 시스템을 제공하고자 합니다.</dd>
 
-Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.
+<dt>Promise 패턴 적용</dt>
+<dd>사용자 기반의 명소 저장 클라우드 시스템은 Google Vision API를 통해 사용자가 저장하고자 하는 이미지의 텍스트를 추출하는 기능을 주로 하고있다.</dd>
+</dl>
 
-Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.
+<img src="/assets/img/si.png" alt="" style="width:600px;">
 
-Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.
+위 그림에서는 메인 화면에서 다수의 사진을 등록한다. 등록되어진 사진들은 등록페이지로 넘어가는 동시에 사진 내 이미지 추출(OCR) 기능이 수행된다.
