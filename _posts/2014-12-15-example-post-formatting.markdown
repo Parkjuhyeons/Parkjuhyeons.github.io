@@ -160,6 +160,64 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
 
 ## 참고 API 및 관련기술
 
+<img src="/assets/img/promise.png" alt="" style="width:600px;">
+
+<p><span class="dropcap">P</span>romise 패턴을 이용하여 비동기 방식의 콜백 문제 개선. </p>
+
+프로미스는 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용합니다. 일반적으로 웹 애플리케이션을 구현할 때 서버에서 데이터를 요청하고 받아오기 위해 아래와 같은 API를 사용합니다.
+<img src="/assets/img/promise1.png" alt="" >
+
+위 API가 실행되면 서버에다가 ‘데이터 하나 보내주세요’ 라는 요청을 보내죠. 그런데 여기서 데이터를 받아오기도 전에 마치 데이터를 다 받아온 것 마냥 화면에 데이터를 표시하려고 하면 오류가 발생하거나 빈 화면이 뜹니다. 이와 같은 문제점을 해결하기 위한 방법 중 하나가 프로미스입니다.
+
+* 적용 프로젝트 (<a href="/blog/example-post-formatting/"><span>«&nbsp;사용자 기반의 명소 저장 클라우드 시스템</span></a>)
+
+<dl>
+<dt>작품 개요</dt>
+<dd>SNS를 이용 중이거나 웹 서핑 중에 마음에 드는 명소를 저장하고자 할 때, 사용자들은 스크린 샷을 찍거나 메모장에 기록하는 등 단순한 저장방법을 이용합니다. 이 때, 저장하고자 하는 명소의 정보가 일정한 시간이 지나 관리할 수 없을 정도가 되면 저장의 가치가 사라집니다. 가고자 하는 목적의 근처를 방문했을 때, 또는 생각이나 가고자 할 때에 저장해둔 데이터를 쉽게 찾기에는 어려움이 존재합니다. 이를 해결하기 위해서 본 프로젝트를 통하여 사용자 기반의 명소저장 클라우드 시스템을 제공하고자 합니다.</dd>
+
+<dt>Promise 패턴 적용</dt>
+<dd>사용자 기반의 명소 저장 클라우드 시스템은 Google Vision API를 통해 사용자가 저장하고자 하는 이미지의 텍스트를 추출하는 기능을 주로 하고있다. 아래 그림에서는 메인 화면에서 다수의 사진을 등록한다. 등록되어진 사진들은 등록페이지로 넘어가는 동시에 사진 내 이미지 추출(OCR) 기능이 수행된다.</dd>
+</dl>
+
+<img src="/assets/img/si.PNG" alt="" style="width:660px;">
+<img src="/assets/img/tutorial.PNG" alt="" style="width:660px;">
+
+실제로 API를 요청하여 텍스트를 포험하는 이미지가 Cloud Storage에 업로드 되고, 트리거된 Cloud Functions는 Vision API를 사용하여 텍스트를 추출하고, 이를 구성된 번역 언어로 번역하도록 대기열에 추가된다.
+트리거된 Cloud Functions는 Translation API를 사용하여 대기열에 추가된 텍스트를 번역하고, 이를 Cloud Storage에 저장하도록 대기열에 추가된다. 마지막으로 트리거된 Cloud Functions는 번역된 텍스트를 Cloud Storage에 저장된다.
+
+이러한 과정을 통해 추출되는 문자들이 등록 페이지에 나열되기까지는 다소 시간이 걸린다. 그러나 페이지 넘김과 동시에 출력하려는 문자들이 아직 추출이 되지 않을 경우에는 데이터가 표시되지 않고 오류가 발생하거나 빈 화면이 뜬다.
+
+<img src="/assets/img/si2.png" alt="" style="width:660px;">
+
+이러한 문제를 해결하기 callback함수를 사용하거나 setTimeout함수를 이용해 시간을 끄는 것은 사용자에게 불편함을 미치거나 시스템 효율상 올바르지 않다. 그리하여 본 시스템에 Promise패턴을 이용하여 성능을 높인다.
+
+{% highlight ruby %}
+
+exports.processImage = (event) => {
+  let file = event.data;
+
+  return Promise.resolve()
+    .then(() => {
+      if (file.resourceState === 'not_exists') {
+        // This was a deletion event, we don't want to process this
+        return;
+      }
+      if (!file.bucket) {
+        throw new Error('Bucket not provided. Make sure you have a "bucket" property in your request');
+      }
+      if (!file.name) {
+        throw new Error('Filename not provided. Make sure you have a "name" property in your request');
+      }
+      return detectText(file.bucket, file.name);
+    })
+    .then(() => {
+      console.log('File ${file.name} processed.');
+    });
+};
+{% endhighlight %}
+
+<!--
 * <a href="/blog/featured-image/"><span>«&nbsp;Promise 패턴</span></a>
 * <a href="/blog/code-snippet/"><span>«&nbsp;Google Vision API</span></a>
 * <a href="/blog/figure-with-caption/"><span>«&nbsp;Progressive Web App</span></a>
+-->
