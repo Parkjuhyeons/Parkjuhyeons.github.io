@@ -110,11 +110,14 @@ OCR Engine (문자 추출 엔진)을 이용하여 캡쳐 사진의 글자들을 
  - 알림을 줄 명소와 제어 할 데이터 선택 가능
 * 공유 기능
  - 저장된 명소를 다른 계정의 누군가와 공유 가능
+ 
+ ## 데이터베이스 설계
+ 
+ 사용자기반의 명소 저장 클라우드 시스템의 사용자 정보와 명소저장을 위한 데이터베이스는 
 <figure>
     <img src="/assets/img/erdiagram.png" alt="" style="width:600px;">
      <figcaption>Fig. 5. E-R Diagram</figcaption>
 </figure>
-
 
 ## 사용자 Web 화면
 
