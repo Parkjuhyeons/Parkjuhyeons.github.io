@@ -2,9 +2,8 @@
 layout: post
 title:  "최적 경로 여행 추천 시스템"
 date:   2014-12-14
-image: promise.png
-description: 
-In this project, we propose a system that shows optimal route, destination route and traffic information according to destination using shortest path algorithm. Through this, it is possible to share recommendation routes and reviews of travelers who have traveled.
+<!--image: promise.png-->
+description: In this project, we propose a system that shows optimal route, destination route and traffic information according to destination using shortest path algorithm. Through this, it is possible to share recommendation routes and reviews of travelers who have traveled.
 ---
 
 <p>최근 국내외로 여행을 하는 여행자들이 많이 늘어나고 있다. 자유여행을 가기 전 여행코스를 세우는 과정에서 일일이 위치를 검색해보거나 가까운 거리를 비교해보며 계획을 세워야 하는 불편함과 번거로움이 있다. 
