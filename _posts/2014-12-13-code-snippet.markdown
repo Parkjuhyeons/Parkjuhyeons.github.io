@@ -34,6 +34,6 @@ date:   2014-12-13
 ## 데이터베이스 설계
 
 <figure>
-    <img src="/assets/img/w_db.png" alt="" style="width:600px;">
+    <img src="/assets/img/w_db.png" alt="" style="width:300px;">
      <figcaption>Fig. 5. E-R Diagram</figcaption>
 </figure>
