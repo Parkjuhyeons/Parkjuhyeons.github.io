@@ -59,7 +59,7 @@ description: In this project, we propose a system that shows optimal route, dest
 * 최적 경로 탐색 <br>
 1.탐색 영역 둘러보기 (The Search Area) <br>
 2.탐색 시작 (Starting the Search) <br>
-3.경로 채점 (Path Scoring)
+3.경로 채점 (Path Scoring)<br>
 4.계속 탐색하기 (Continuing the Search)
 
 <p>F = G + H
