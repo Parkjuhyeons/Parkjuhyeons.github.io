@@ -109,7 +109,7 @@ F - 현재까지 이동하는데 걸린 비용과 예상 비용을 합친 총 �
 </figure>
 
 <figure>
-    <video src="/assets/img/video.gif" style="width:580px;" ></video>
+    <img src="/assets/img/video.gif" alt="" style="width:580px;" >
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 
