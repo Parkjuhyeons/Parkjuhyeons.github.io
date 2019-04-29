@@ -111,7 +111,7 @@ F - 현재까지 이동하는데 걸린 비용과 예상 비용을 합친 총 �
 ## 시연 영상 
 
 <figure>
-    <img src="/assets/img/video.gif" alt="" style="width:600px;" >
+    <img src="/assets/img/video.gif" alt="" style="width:700px;" >
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 
@@ -124,4 +124,48 @@ F - 현재까지 이동하는데 걸린 비용과 예상 비용을 합친 총 �
 
 ## 관련 기술
 
-*
+* <a href="https://cloud.google.com/maps-platform/?hl=ko">Google Map API</a> - 참고 튜토리얼
+
+* a* 알고리즘 적용
+<img src="https://www.101computing.net/wp/wp-content/uploads/A-Star-Search-Algorithm.png" alt="" style="width:600px;">
+
+1. 최소가 되는 지점을 우선 탐색(우선 순위 큐)
+2. 휴리스틱 추정값 사용
+3. Open List/Closed List를 이용하여 노드 관리
+
+<dl>
+<dt>개념 설명</dt>
+</dl>
+
+1. 휴리스틱 추정 값
+
+f(x) = h(x) + g(x)
+-h(x) : 출발 노드 n으로부터 도착 노드 n까지의 경로 가중치 (새로운 사각형까지의 거리)
+<img src="/assets/img/g_a.PNG" alt="" >
+-g(x) : 노드 n으로부터 목표 노드까지의 추정 경로 가중치 (도착 노드까지의 예상 노드비용)
+
+2. Open List, Closed List
+
+-Open List : 검색 가능성이 있는 노드의 집합
+-Closed List : 이미 검색이 끝난 지점들의 집합
+
+3. 탐색 우선 순위
+
+-Open List 내의 f(x) 가중치 값이 가장 작은 노드부터 탐색
+
+<dl>
+<dt>동작 원리</dt>
+</dl>
+
+{% highlight ruby %}
+
+while pq_size
+    node = pq.pop;
+    if node == goal
+        break;
+    for next_node in (next_node_begin...next_node_end)
+        pq.push(next_node, g(node) + cost + h(next_node));
+        
+print node
+
+{% endhighlight %}
