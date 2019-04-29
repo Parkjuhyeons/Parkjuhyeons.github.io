@@ -108,14 +108,19 @@ F - 현재까지 이동하는데 걸린 비용과 예상 비용을 합친 총 �
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 
+## 시연 영상 
+
 <figure>
-    <img src="/assets/img/video.gif" alt="" style="width:580px;" >
+    <img src="/assets/img/video.gif" alt="" style="width:600px;" >
      <figcaption>Fig. 1. System Conceptual Diagram</figcaption>
 </figure>
 
 ## 비고
 
 * 논문 2건 
+<a href="/assets/img/g_hci.pdf">HCI Conference 2018</a>, 
+<a href="/assets/img/g_k.pdf">한국정보과학회 Conference 2018</a>
+
 
 ## 관련 기술
 
